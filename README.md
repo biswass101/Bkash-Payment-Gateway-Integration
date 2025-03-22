@@ -1,4 +1,5 @@
-# EVS
+<pre>
+<b>EVS</b>
 
 port = 5000
 db_url = 'mongodb://127.0.0.1:27017/bkash'
@@ -13,7 +14,7 @@ bkash_create_payment_url =  https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokeniz
 bkash_execute_payment_url = https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/execute
 bkash_refund_transaction_url = https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/payment/refund
 
-# API's
+<b>API's</b>
 POST: <BaseURL>/bkash/payment/create       //For creating Payment
       url: bkash_create_payment_url,
       body: {
@@ -58,7 +59,7 @@ GET: <BaseURL>/bkash/payment/refund/:trxId      //Refund
         "x-app-key": bkash_api_key,
       }
 
-# Authentication
+<b>Authentication</b>
 url: bkash_grant_token_url
 body: {
   app_key : bkash_api_key,
@@ -73,7 +74,7 @@ headers:
   }
 
 
-# Testing Numbers, Password and OTP:
+<b>Testing Numbers, Password and OTP</b>
 Test Numbers: 
 	01770618575 (money available)
 	01823074817 (no money)
@@ -83,3 +84,4 @@ authorization:
 	password: 12121
 	otp: 123456
 	
+</pre>
