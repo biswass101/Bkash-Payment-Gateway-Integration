@@ -1,5 +1,5 @@
 <pre>
-<b>EVS</b>
+<b>Environment Variables</b>
 
 port = 5000
 db_url = 'mongodb://127.0.0.1:27017/bkash'
